@@ -24,7 +24,7 @@
           p {
               padding:39px;
               font-family:serif;
-      }
+          }
       body {
           height: 100%;
           width: 100%;
@@ -32,7 +32,10 @@
       .responsive {
           width: 100%;
           height: auto;
-          top: 0px;
+          top: 20px;
+          left:0px;
+          right:0px;
+          margin:0px;
       }
       .topnav {
           background-color: rgb(85, 161, 90);
@@ -49,10 +52,9 @@
           color: black;
           position: fixed
           z-index:2;
-          font-family:chalkboard;
+          font-family:serif;
           font-weight: bold;
           font-style: oblique;
-          width:10px;
       }
       .topnav a:hover {
           background-color: rgb(61, 105, 68);
@@ -73,31 +75,44 @@
         top:50px;
         left:0px;
         padding:0px;
-        width:100%;
     }
-    #minecrafted {
-    height:60px;
+      #minecrafted {
     width:auto;
     float:left;
+    }
+    .title {
+    top:10px
+    position:absolute
+    }
+    .onimg {
+    position:absolute;
+    float:left;
+    margin:0px;
+    background-color: rgb(176, 121, 176);
+    padding: 3px;
+    color:black;
     }
   </style>
   </head>
 <body>
-    <div class="header">
-        
+    <div class="header">  
+    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <a id="minecrafted" href=index.html><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition"></a>
             <a class="active" href="index.html">Home</a>
             <a href="demo_worlds.html">Demo Worlds</a>
             <a href="programming.html">Programming</a>
 
     </div>
     </div
-    </head>
+    </div>
     <div class="body">
     <p>
-        <img src="https://i.pinimg.com/564x/46/26/4c/46264c741ed812fe77a0803020e0cf92.jpg" alt="Students playing Minecraft" class="responsive">
- <h2>Engage Students in Fun New Ways</h2>
+
+  <img src="https://user-images.githubusercontent.com/87051960/127574849-b32ed08f-b71a-4863-9da4-7a32e1ad34ea.jpg" class="responsive">
+  <div class="onimg">
+  Educators have told us that using Minecraft to teach part of their curriculum has helped them improve student engagement, collaboration, creative exploration, and tangible learning outcomes.
+  </div>
+ <h2 class="title">Engage Students in Fun New Ways</h2>
 
 Educators have told us that using Minecraft to teach part of their curriculum has helped them improve student engagement, collaboration, creative exploration, and tangible learning outcomes.
 <h2>Student Engagement</h2>
