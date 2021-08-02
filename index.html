@@ -7,23 +7,30 @@
       .header {
             padding: 3px;
   text-align: center;
-  background:rgb(119, 184, 130);
+  background:rgb(40, 122, 12);
   color: black;
-  font-size:11px;
-          font-family:marker felt;
+  font-size:5px;
+          font-family:monaco;
               position:fixed;
               width:100%;
               top:0px;
               left:0px;
+              z-index:5;
+              border-bottom-style:solid;
+             border-color:gold;
+             border-width:6px;
            
       }
       .body {
           background: white;
           font-size: 20px;
+          font-family:courier;
+          
       }
           p {
               padding:39px;
-              font-family:serif;
+              font-weight:lighter;
+          
           }
       body {
           height: 100%;
@@ -38,9 +45,10 @@
           margin:0px;
       }
       .topnav {
-          background-color: rgb(85, 161, 90);
+          background-color: rgb(66, 161, 35);
           overflow: hidden;
           color: black;
+             z-index:5;
       }
       .topnav a {
           float: left;
@@ -49,15 +57,13 @@
           padding: 10px 50px;
           text-decoration: none;
           font-size: 15px;
-          color: black;
-          position: fixed
-          z-index:2;
+          color:black;
           font-family:serif;
           font-weight: bold;
           font-style: oblique;
       }
       .topnav a:hover {
-          background-color: rgb(61, 105, 68);
+          background-color: rgb(53, 133, 27);
           padding: 10px 50px;
           color: white;
       }
@@ -69,28 +75,56 @@
         font-size:30px;
         background:white;
         text-align: center;
-        font-family:optima;
+        font-family:didot;
+        font-weight:bold;
+        z-index:1;
     }
     img {
         top:50px;
         left:0px;
         padding:0px;
+        margin:0px;
     }
       #minecrafted {
     width:auto;
-    float:left;
+    float:right;
+    
+    
     }
     .title {
-    top:10px
-    position:absolute
+    top:160px;
+    position:absolute;
+    z-index:1;
+    background-color:rgb(152,190,255, 0.6);
+    color:black;
+    font-family:courier;
+    font-weight:bolder;
+    font-size:50px;
+    text-align: center;
+    padding:10px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    left:25%;
+    
     }
     .onimg {
     position:absolute;
-    float:left;
+    float:right;
     margin:0px;
-    background-color: rgb(176, 121, 176);
-    padding: 3px;
+    background-color:rgb(254,255,0, 0.8);
+    padding: 5px;
     color:black;
+    top:620px;
+    text-align:center;
+    font-size:15px;
+    font-family:courier;
+    font-weight:normal;
+    border-left-style:solid;
+    border-width:10px;
+    border-color:yellow;
     }
   </style>
   </head>
@@ -98,25 +132,27 @@
     <div class="header">  
     <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <a class="active" href="index.html">Home</a>
-            <a href="demo_worlds.html">Demo Worlds</a>
-            <a href="programming.html">Programming</a>
-
+            <a class="active" href="index.html">HOME</a>
+            <a href="demo_worlds.html">DEMO WORLDS</a>
+            <a href="programming.html">PROGRAMMING</a>
     </div>
     </div
     </div>
     <div class="body">
     <p>
-
+ <h2 class="title">STUDENT ENGAGEMENT</h2>
   <img src="https://user-images.githubusercontent.com/87051960/127574849-b32ed08f-b71a-4863-9da4-7a32e1ad34ea.jpg" class="responsive">
   <div class="onimg">
-  Educators have told us that using Minecraft to teach part of their curriculum has helped them improve student engagement, collaboration, creative exploration, and tangible learning outcomes.
+  
+ Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with.<br> It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game.
   </div>
- <h2 class="title">Engage Students in Fun New Ways</h2>
-
-Educators have told us that using Minecraft to teach part of their curriculum has helped them improve student engagement, collaboration, creative exploration, and tangible learning outcomes.
-<h2>Student Engagement</h2>
-Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with. It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game.
+<h2>Engage Students in Fun New Ways</h2>
+<h3>Educators have told us that using Minecraft to teach part of their curriculum has helped them:</h3>
+ <ul>
+  <li>improve student engagement 
+  <li>collaboration 
+  <li>creative exploration 
+  <li>tangible learning outcomes.</ul>
 
 </div>
 </body>
