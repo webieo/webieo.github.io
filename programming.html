@@ -7,37 +7,62 @@
       .header {
             padding: 3px;
   text-align: center;
-  background:rgb(119, 184, 130);
+  background:rgb(40, 122, 12);
   color: black;
-  font-size:11px;
-          font-family:marker felt;
+  font-size:5px;
+          font-family:monaco;
               position:fixed;
               width:100%;
               top:0px;
               left:0px;
+              z-index:5;
+              border-bottom-style:solid;
+             border-color:rgb(84, 56, 19);
+             border-width:6px;
            
       }
       .body {
-          background: white;
           font-size: 20px;
+          font-family:courier;
+          
+        
+          
       }
           p {
-              padding:27px;
-              font-family:serif;
+              padding:39px;
+              font-weight:lighter;
+          
           }
       body {
           height: 100%;
           width: 100%;
+          margin:0px;
+          background-color:rgb(94,72,49);
       }
       .responsive {
           width: 100%;
           height: auto;
           top: 20px;
+          left:0px;
+          right:0px;
+          margin:0px;
+          padding:0px;
       }
+           .responsivee {
+          width: 49%;
+          height: auto;
+          top: 20px;
+          left:0px;
+          right:0px;
+          margin:0px;
+          padding:0px;
+          object-fit:cover;
+          }
       .topnav {
-          background-color: rgb(85, 161, 90);
+          background-color: rgb(66, 161, 35);
           overflow: hidden;
           color: black;
+             z-index:5;
       }
       .topnav a {
           float: left;
@@ -46,15 +71,13 @@
           padding: 10px 50px;
           text-decoration: none;
           font-size: 15px;
-          color: black;
-          position: fixed
-          z-index:2;
-          font-family:chalkboard;
+          color:black;
+          font-family:serif;
           font-weight: bold;
           font-style: oblique;
       }
       .topnav a:hover {
-          background-color: rgb(61, 105, 68);
+          background-color: rgb(53, 133, 27);
           padding: 10px 50px;
           color: white;
       }
@@ -64,36 +87,65 @@
     }
     h2 {
         font-size:30px;
-        background:white;
         text-align: center;
-        font-family:optima;
+        font-family:didot;
+        font-weight:bold;
+        z-index:1;
+background-color:rgb(122,85,57, 0.2);
+position:relative;
+top:-20px;
+color:white;
     }
-    img {
-        top:50px;
-        left:0px;
-        padding:0px;
-    }
+
+}
+h3 {
+margin:30px;
+font-size:25px;
+}
+.title {
+position:relative;
+top:-185px;
+z-index:2;
+}
+.text {
+margin:7px;
+text-align:center;
+position:relative;
+top:-160px;
+color:lightgrey;
+font-weight:bolder;
+}
+.cover {
+object-fit:cover;
+
+}
   </style>
   </head>
 <body>
     <div class="header">  
-  <h1> Minecraft Education </h1>
+    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <ul>
-            <a class="active" href="index.html">Home</a>
-            <a href="demo_worlds.html">Demo Worlds</a>
-                <a href="programming.html">Programming</a>
-        </ul>
+            <a class="active" href="index.html">HOME</a>
+            <a href="demo_worlds.html">DEMO WORLDS</a>
+            <a href="programming.html">PROGRAMMING</a>
     </div>
-    </div
+    </div>
     </div>
     <div class="body">
+<img class="cover" src="https://user-images.githubusercontent.com/87051960/128273207-9dadc682-70f5-45e0-bee3-95e11f46b1e0.png" alt="wood background" width=100%
+height=180px>
     <p>
-        <img src="" alt="Demo worlds" class="responsive">
- <h2>Programming in Minecraft</h2>
 
+ <div class="text">
+ <h2>Programming in Minecraft</h2>
+<img src="https://user-images.githubusercontent.com/87051960/128272153-d277cf6f-9ded-4c9b-8cfc-47b5aed7f4ca.jpg" class="responsive">
 Using MinecraftEDU students can write real computer progams using the LUA language.  Right click on a computer to edit your code, or even better, use a real code editor outside of Minecraft to edit your code.
+<img src="https://user-images.githubusercontent.com/87051960/128272282-50f2acf5-41b7-488c-9263-a1431f1afa05.jpg" class="responsivee">
+<img src="https://user-images.githubusercontent.com/87051960/128272359-37ae4d5c-6875-4583-80cb-5b5967abadb1.jpg" class="responsivee">
 </div>
+</div>
+</p>
 </body>
   
 </html>
+
