@@ -22,9 +22,10 @@
            
       }
       .body {
-          background: white;
           font-size: 20px;
           font-family:courier;
+          
+        
           
       }
           p {
@@ -35,6 +36,8 @@
       body {
           height: 100%;
           width: 100%;
+          margin:0px;
+          background-color:rgb(149,214,254, 0.7);
       }
       .responsive {
           width: 100%;
@@ -43,7 +46,17 @@
           left:0px;
           right:0px;
           margin:0px;
+          padding:0px;
       }
+           .responsivee {
+          width: 49%;
+          height: auto;
+          top: 20px;
+          left:0px;
+          right:0px;
+          margin:0px;
+          padding:0px;
+          }
       .topnav {
           background-color: rgb(66, 161, 35);
           overflow: hidden;
@@ -73,33 +86,59 @@
     }
     h2 {
         font-size:30px;
-        background:white;
         text-align: center;
         font-family:didot;
         font-weight:bold;
         z-index:1;
+background-color:rgb(67, 188, 222, 0.5)
     }
+
+}
+h3 {
+margin:30px;
+font-size:25px;
+}
+.title {
+position:relative;
+top:-185px;
+z-index:2;
+
+}
+#clouds {
+z-index:1;
+margin:0px;
+background-color:rgb(149,214,254);
+}
+.text {
+margin:7px;
+text-align:center;
+position:relative;
+top:-160px;
+}
   </style>
   </head>
 <body>
     <div class="header">  
-  <h1> Minecraft Education </h1>
+    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <ul>
-            <a class="active" href="index.html">Home</a>
-            <a href="demo_worlds.html">Demo Worlds</a>
-            <a href="programming.html">Programming</a>
-                 
-        </ul>
+            <a class="active" href="index.html">HOME</a>
+            <a href="demo_worlds.html">DEMO WORLDS</a>
+            <a href="programming.html">PROGRAMMING</a>
     </div>
-    </div
+    </div>
     </div>
     <div class="body">
+<id="clouds"><img src="https://timelinecovers.pro/facebook-cover/download/minecraft_sky_clouds-facebook-cover.jpg" alt="minecraft clouds" width="100%" height="200px">
     <p>
-        <img src="" alt="Demo worlds" class="responsive">
- <h2>Demo Worlds</h2>
-Here are some worlds made by teachers.
+ <h2 class="title">Demo Worlds</h2>
+ <div class="text">
+Here are some worlds made by teachers.<br>
+<img src="https://user-images.githubusercontent.com/87051960/128270480-faf13c9c-3d7f-43fc-8413-1b7cfe0402f0.jpg" alt="Demo world 1" class="responsive">
+<img src="https://user-images.githubusercontent.com/87051960/128270547-7cc23369-9aca-4621-b063-c7be0d90bfec.jpg" alt="Demo world 2" class="responsivee">
+<img src="https://user-images.githubusercontent.com/87051960/128270574-05b06f3b-1427-40a2-bf84-e3307d667731.jpg" alt="Demo world 3" class="responsivee">
 </div>
+</div>
+</p>
 </body>
   
 </html>
