@@ -18,44 +18,59 @@
               z-index:5;
               border-bottom-style:solid;
              border-color:rgb(84, 56, 19);
-             border-width:6px;
-           
+             border-width:6px;    
       }
       .body {
           font-size: 20px;
           font-family:courier;
-          
-        
-          
+          margin:0px;   
       }
           p {
-              padding:39px;
+              padding:0px;
               font-weight:lighter;
-          
+          margin:3px;
           }
       body {
-          height: 100%;
+          height: 60%;
           width: 100%;
           margin:0px;
-          background-color:rgb(147,215,252, 0.7);
+          background-color:rgb(146,215,254, 0.9);
       }
       .responsive {
           width: 100%;
           height: auto;
-          top: 20px;
+          top: 5px;
           left:0px;
           right:0px;
           margin:0px;
           padding:0px;
       }
-           .responsivee {
-          width: 49%;
+       .responsiv {
+          width: 100%;
           height: auto;
-          top: 20px;
+          top:150px;
           left:0px;
           right:0px;
           margin:0px;
           padding:0px;
+          border-style:rounded;
+          border-color:white;
+          border-radius:30px;
+          position:relative;
+          z-index:0;
+      }
+           .responsivee {
+          width: 49%;
+          height: auto;
+          top:140px;
+          left:0px;
+          right:0px;
+          margin:0px;
+          padding:0px;
+          border-style:rounded;
+          border-color:white;
+          border-radius:20px;
+          position:relative;
           }
       .topnav {
           background-color: rgb(66, 161, 35);
@@ -83,6 +98,7 @@
       .topnave a.active {
           background-color: #04AA6D;
           color: black;
+         
     }
     h2 {
         font-size:30px;
@@ -90,7 +106,8 @@
         font-family:didot;
         font-weight:bold;
         z-index:1;
-background-color:rgb(67, 188, 222, 0.5)
+background-color:rgb(67, 188, 222, 0.5);
+margin:0px;
     }
 
 }
@@ -100,8 +117,10 @@ font-size:25px;
 }
 .title {
 position:relative;
-top:-185px;
+top:-80px;
 z-index:2;
+color:white;
+font-size:40px;
 
 }
 #clouds {
@@ -113,9 +132,17 @@ background-color:rgb(149,214,254);
 margin:7px;
 text-align:center;
 position:relative;
-top:-160px;
-    color:grey;
+top:-35px;
+    color:white;
+    background:rgb(67, 188, 222, 0.2);
+    font-size:30px;
 }
+.imgs {
+position:relative;
+top:-150px;
+margin:0px;
+}
+ { border: 1px solid red; }
   </style>
   </head>
 <body>
@@ -133,14 +160,12 @@ top:-160px;
     <p>
  <h2 class="title">Demo Worlds</h2>
  <div class="text">
-Here are some worlds made by teachers.<br>
-<img src="https://user-images.githubusercontent.com/87051960/128270547-7cc23369-9aca-4621-b063-c7be0d90bfec.jpg" alt="Demo world 2" class="responsivee">
-<img src="https://user-images.githubusercontent.com/87051960/128270574-05b06f3b-1427-40a2-bf84-e3307d667731.jpg" alt="Demo world 3" class="responsivee">
-<img src="https://user-images.githubusercontent.com/87051960/128270480-faf13c9c-3d7f-43fc-8413-1b7cfe0402f0.jpg" alt="Demo world 1" class="responsive">
-
-</div>
+Here are some worlds made by teachers.
 </div>
 </p>
 </body>
-  
+<div class="imgs">
+<id="i"><img src="https://user-images.githubusercontent.com/87051960/128270547-7cc23369-9aca-4621-b063-c7be0d90bfec.jpg" alt="Demo world 2" class="responsivee">
+<img src="https://user-images.githubusercontent.com/87051960/128270574-05b06f3b-1427-40a2-bf84-e3307d667731.jpg" alt="Demo world 3" class="responsivee">
+<img src="https://user-images.githubusercontent.com/87051960/128270480-faf13c9c-3d7f-43fc-8413-1b7cfe0402f0.jpg" alt="Demo world 1" class="responsiv">
 </html>
