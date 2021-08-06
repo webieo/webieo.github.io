@@ -90,32 +90,40 @@
     color:white;
     }
     .title {
-    z-index:1;
-    color:white;
+    position:absolute;
+    z-index:2;
+    top:100px;
     font-family:times;
     font-weight:bolder;
     font-size:50px;
     margin: auto;
-    background-color:transparent;
+    background-color:rgb(74,131,147, 0.5);
+    border-top:5px ridge white;
+    width:100%;
+    box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
     }
     .onimg {
     position:absolute;
     float:right;
     margin:0px;
-    background-color:rgb(74,131,147, 0.5);
+    background-color:rgb(74,131,147, 0.7);
     padding: 5px;
-    color:white;
-    top:60%;
+    top:40%;
     text-align:center;
-    font-size:15px;
+    font-size:20px;
     font-family:courier;
     font-weight:normal;
-    border-left-style:solid;
+    border-style:solid;
+    border-right:transparent;
+    border-left:transparent;
     border-width:10px;
     border-color:rgb(74,131,147);
     border-radius:5px;
-    width:50%;
-    left:50%;
+    width:60%;
+    left:20%;
+    box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
     }
 .cow {
 position:relative;
@@ -184,8 +192,8 @@ font-size:30px;
     <p>
 <div class="container">
   <img src="https://user-images.githubusercontent.com/87051960/127574849-b32ed08f-b71a-4863-9da4-7a32e1ad34ea.jpg" class="responsive" alt="kids playing Minecraft">
- <div class="onimg"> 
  <h2 class="title">STUDENT ENGAGEMENT</h2>
+ <div class="onimg"> 
  Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with.<br> It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game.
   </div>
   </div>
@@ -207,3 +215,4 @@ font-size:30px;
 </body>
   
 </html>
+
