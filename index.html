@@ -97,8 +97,8 @@
     font-weight:bolder;
     font-size:50px;
     margin: auto;
-    background-color:rgb(74,131,147, 0.5);
-    border-top:5px ridge white;
+    background-color:rgb(164, 92, 173, 0.5);
+    border-top:5px double white;
     width:100%;
     box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
@@ -107,34 +107,39 @@
     position:absolute;
     float:right;
     margin:0px;
-    background-color:rgb(74,131,147, 0.7);
+    background-color:rgb(164, 92, 173, 0.7);
     padding: 5px;
     top:40%;
     text-align:center;
     font-size:20px;
     font-family:courier;
     font-weight:normal;
-    border-style:solid;
-    border-right:transparent;
-    border-left:transparent;
-    border-width:10px;
-    border-color:rgb(74,131,147);
-    border-radius:5px;
+    border-radius:7px;
+    border:7px outset rgb(164, 92, 173);
     width:60%;
     left:20%;
     box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
     transition: 0.3s;
     }
+    .containerr {
+    position:relative;
+    text-align:center;
+    color:white;
+    z-index:3;
+    margin:0px;
+    }
 .cow {
 position:relative;
 float:right;
 right:30px;
-top:50px;
+top:-500px;
 display:block;
 padding:0px;
+margin:0px;
+background-color:transparent;
 
 }
-#dirt {
+#quartz {
 z-index:-1;
 position:relative;
 }  
@@ -144,7 +149,6 @@ border-color:white;
 font-family:monospace;
 font-weight: normal;
 background-color:transparent;
-color:white;
 }
 h3 {
 margin:30px;
@@ -153,28 +157,20 @@ font-size:25px;
 .fun {
 position:relative;
 top:-533px;
-color:white;
-background-color:rgb(165, 178, 199, 0.3);
 border:2px solid transparent;
 border-radius:5px;
 margin:30px;
 padding:7.1px;
-}
-.funb {
-position:relative;
-top:75px;
-color:white;
-background-color:transparent;
-margin:0px;
-padding:1px;
-font-family:courier;
+background-color:rgb(121,60,251, 0.3);
 }
 ul {
-background-color:rgb(165, 178, 199, 0.3);
-margin:0px;
-padding:30px;
+top:100px;
+left:0px;
+padding:40px;
 float:left;
+text-align:left;
 font-size:30px;
+background-color:rgb(121,60,251, 0.3);
 }
   </style>
   </head>
@@ -197,11 +193,11 @@ font-size:30px;
  Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with.<br> It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game.
   </div>
   </div>
-  <id="books"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUV8p-r3_qBYTGnfMaqjAmznvVnMPVjwyug&usqp=CAU" alt="books background" height="530px" width="100%">
+  <div class="containerr">
+  <id="quartz"><img src="https://user-images.githubusercontent.com/87051960/128582874-3a555a11-dfc8-49cb-9c8f-8adbde3b471c.png" alt="quartz background" height="auto" width="100%">
   <div class="fun">
 <h2 id="engage">ENGAGE STUDENTS IN FUN NEW WAYS</h2>
 <h3>Educators have told us that using Minecraft to teach part of their curriculum has helped them with:</h3>
-<div class="funb">
  <ul>
   <li>improved student engagement 
   <li>collaboration 
@@ -209,10 +205,10 @@ font-size:30px;
   <li>tangible learning outcomes</ul>
   </div>
 <div class="cow">
-<img src="https://user-images.githubusercontent.com/87051960/127931376-401025ee-c76d-4da7-bee2-70fcabbe2f84.png" height="250px">
+<img src="https://user-images.githubusercontent.com/87051960/127931376-401025ee-c76d-4da7-bee2-70fcabbe2f84.png" height="250px" alt="Minecraft cow">
+</div>
 </div>
 </div>
 </body>
   
 </html>
-
