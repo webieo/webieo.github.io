@@ -1,240 +1,255 @@
 <!DOCTYPE html>
 <html>
-<head>   
+  <head>
     <title> Minecraft Education </title>
-    </head>
-    <meta charset= "utf-8"> 
+  </head>
+  <meta charset="utf-8">
   <style>
-      .header {
-  padding: 1px;
-  text-align: center;
-  background:rgb(40, 122, 12);
-  color: black;
-  font-size:5px;
-          font-family:monaco;
-              position:fixed;
-              width:100%;
-              top:0px;
-              left:0px;
-              z-index:5;
-              border-bottom-style:solid;
-             border-color:rgb(84, 56, 19);
-             border-width:6px;
-           
-      }
-      .body {
-          background: white;
-          font-size: 1.4vw;
-          font-family:courier;
-          
-        
-          
-      }
-          p {
-              padding:3px;
-              font-weight:lighter;
-          
-          }
-      body {
-          height: 100%;
-          width: 100%;
-          padding-bottom:20px;
-          border: 1px solid transparent;
-      }
-      .responsive {
-          width: 100%;
-          height: auto;
-          top: 20px;
-          left:0px;
-          right:0px;
-          margin:0px;
-      }
-      .topnav {
-          background-color: rgb(66, 161, 35);
-          overflow: hidden;
-          color: black;
-          z-index:5;
-	  background-color: #36b030;
-         -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-          box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-      }
-      .topnav a {
-          float: left;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 10px 50px;
-          text-decoration: none;
-          font-size: 15px;
-          color:black;
-          font-family:serif;
-          font-weight: bold;
-          font-style: oblique;
-      }
-      .topnav a:hover {
-          background-color: rgb(8, 151, 50);
-          padding: 10px 50px;
-          color: white;
-           box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
-      }
-      .topnave a.active {
-          background-color: #04AA6D;
-          color: black;
+    .header {
+      padding: 1px;
+      text-align: center;
+      background: rgb(40, 122, 12);
+      color: black;
+      font-size: 5px;
+      font-family: monaco;
+      position: fixed;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: 5;
+      border-bottom-style: solid;
+      border-color: rgb(84, 56, 19);
+      border-width: 6px;
     }
+
+    .body {
+      background: white;
+      font-size: 1.4vw;
+      font-family: courier;
+    }
+
+    p {
+      padding: 3px;
+      font-weight: lighter;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      padding-bottom: 20px;
+      border: 1px solid transparent;
+    }
+
+    .responsive {
+      width: 100%;
+      height: auto;
+      top: 20px;
+      left: 0px;
+      right: 0px;
+      margin: 0px;
+    }
+
+    .topnav {
+      background-color: rgb(66, 161, 35);
+      overflow: hidden;
+      color: black;
+      z-index: 5;
+      background-color: #36b030;
+      -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+      box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 10px 50px;
+      text-decoration: none;
+      font-size: 15px;
+      color: black;
+      font-family: serif;
+      font-weight: bold;
+      font-style: oblique;
+    }
+
+    .topnav a:hover {
+      background-color: rgb(8, 151, 50);
+      padding: 10px 50px;
+      color: white;
+      box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
+    }
+
+    .topnave a.active {
+      background-color: #04AA6D;
+      color: black;
+    }
+
     h2 {
-        font-size:2vw;
-        background:white;
-        text-align: center;
-        font-family:didot;
-        font-weight:bold;
-        z-index:1;
+      font-size: 2vw;
+      background: white;
+      text-align: center;
+      font-family: didot;
+      font-weight: bold;
+      z-index: 1;
     }
-      #minecrafted {
-    width:100%;
-    float:right;
-	}	
-	.container {
-    position:relative;
-    text-align:center;
-    color:white;
+
+    #minecrafted {
+      width: 100%;
+      float: right;
     }
+
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
     .title {
-    position: absolute;
-    z-index: 2;
-    top: 97px;
-    font-family: times;
-    font-weight: bolder;
-    font-size: 2.5em;
-    margin: auto;
-    background-color: rgb(121,60,251, 0.3);
-    border-top: 5px double white;
-    border-bottom: 5px double white;
-    width: 100%;
-    box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
-    transition: 0.3s;
-    padding: 14px;
+      position: absolute;
+      z-index: 2;
+      top: 97px;
+      font-family: times;
+      font-weight: bolder;
+      font-size: 2.5em;
+      margin: auto;
+      background-color: rgb(121, 60, 251, 0.3);
+      border-top: 5px double white;
+      border-bottom: 5px double white;
+      width: 100%;
+      box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      padding: 14px;
     }
+
     .onimg {
-    position: absolute;
-    float: right;
-    margin: 0px;
-    background-color: rgb(121,60,251, 0.4);
-    top: 26vw;
-    text-align: center;
-    font-size: 1.7vw;
-    font-family: courier;
-    font-weight: normal;
-    border-radius: 7px;
-    border: 7px outset rgb(121,60,251);
-    width: auto;
-    height: 21vw;
-    left: 25%;
-    right: 25%;
-    box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
-    transition: 0.3s;
-    padding: 4vw;
-    z-index: 4;
+      position: absolute;
+      float: right;
+      margin: 0px;
+      background-color: rgb(121, 60, 251, 0.4);
+      top: 26vw;
+      text-align: center;
+      font-size: 1.7vw;
+      font-family: courier;
+      font-weight: normal;
+      border-radius: 7px;
+      border: 7px outset rgb(121, 60, 251);
+      width: auto;
+      height: 21vw;
+      left: 25%;
+      right: 25%;
+      box-shadow: 0 6px 4px 0 rgb(0 0 0 / 20%);
+      transition: 0.3s;
+      padding: 4vw;
+      z-index: 4;
     }
+
     .containerr {
-    position:relative;
-    text-align:center;
-    color:white;
-    z-index:3;
-    margin:0px;
+      position: relative;
+      text-align: center;
+      color: white;
+      z-index: 3;
+      margin: 0px;
     }
-.cow {
-    position: relative;
-    float: right;
-    right: 11vw;
-    top: -32vw;
-    display: block;
-    padding: 0px;
-    margin: 0px;
-    max-height: 20%;
-    max-width: 41%;
-    background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#quartz {
-z-index:-1;
-position:relative;
-}  
-#engage {
-border-bottom-style:solid;
-border-color:white;
-font-family:monospace;
-font-weight: normal;
-background-color:transparent;
-}
-h3 {
-margin: 2vw;
-font-size: 1.6vw;
-}
-.fun {
-    position: absolute;
-    top: 2vw;
-    border-radius: 5px;
-    margin: 5vw;
-    padding: 5vw;
-    background-color: rgb(121,60,251, 0.3);
-    height: 30vw;
-}
-ul {
-    left: 0px;
-    padding: 5.6vw;
-    float: left;
-    text-align: left;
-    font-size: 1.8vw;
-    height: 6vw;
-    background-color: rgb(121,60,251, 0.3);
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-	  }
+
+    .cow {
+      position: relative;
+      float: right;
+      right: 11vw;
+      top: -32vw;
+      display: block;
+      padding: 0px;
+      margin: 0px;
+      max-height: 20%;
+      max-width: 41%;
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    #quartz {
+      z-index: -1;
+      position: relative;
+    }
+
+    #engage {
+      border-bottom-style: solid;
+      border-color: white;
+      font-family: monospace;
+      font-weight: normal;
+      background-color: transparent;
+    }
+
+    h3 {
+      margin: 2vw;
+      font-size: 1.6vw;
+    }
+
+    .fun {
+      position: absolute;
+      top: 2vw;
+      border-radius: 5px;
+      margin: 5vw;
+      padding: 5vw;
+      background-color: rgb(121, 60, 251, 0.3);
+      height: 30vw;
+    }
+
+    ul {
+      left: 0px;
+      padding: 5.6vw;
+      float: left;
+      text-align: left;
+      font-size: 1.8vw;
+      height: 6vw;
+      background-color: rgb(121, 60, 251, 0.3);
+    }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: white;
+      color: black;
+      text-align: center;
+    }
   </style>
-<body>
-    <div class="header">  
-    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
+  <body>
+    <div class="header">
+      <id="minecrafted">
+        <img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <a class="active" href="index.html">HOME</a>
-            <a href="demo_worlds.html">DEMO WORLDS</a>
-            <a href="programming.html">PROGRAMMING</a></div>
+          <a class="active" href="index.html">HOME</a>
+          <a href="demo_worlds.html">DEMO WORLDS</a>
+          <a href="programming.html">PROGRAMMING</a>
+        </div>
     </div>
     </div>
     <div class="body">
-    <p>
-<div class="container">
-  <img src="https://user-images.githubusercontent.com/87051960/127574849-b32ed08f-b71a-4863-9da4-7a32e1ad34ea.jpg" class="responsive" alt="kids playing Minecraft">
- <h2 class="title">STUDENT ENGAGEMENT</h2>
- <div class="onimg"> 
- Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with.<br> It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game.
-  </div>
-  </div>
-  <div class="containerr">
-  <id="quartz"><img src="https://user-images.githubusercontent.com/87051960/128582874-3a555a11-dfc8-49cb-9c8f-8adbde3b471c.png" alt="quartz background" height="auto" width="100%">
-  <div class="fun">
-<h2 id="engage">ENGAGE STUDENTS IN FUN NEW WAYS</h2>
-<h3>Educators have told us that using Minecraft to teach part of their curriculum has helped them with:</h3>
- <ul>
-  <li>improved student engagement 
-  <li>collaboration 
-  <li>creative exploration 
-  <li>tangible learning outcomes</ul>
-  </div>
-<div class="cow">
-<img src="https://user-images.githubusercontent.com/87051960/127931376-401025ee-c76d-4da7-bee2-70fcabbe2f84.png" style:"height=6vw" alt="Minecraft cow">
-</div>
-</div>
-</div>
-	    <div class="footer">
-		    Ariela Mcclame
-	    </div>
-</body>
-  
+      <p>
+      <div class="container">
+        <img src="https://user-images.githubusercontent.com/87051960/127574849-b32ed08f-b71a-4863-9da4-7a32e1ad34ea.jpg" class="responsive" alt="kids playing Minecraft">
+        <h2 class="title">STUDENT ENGAGEMENT</h2>
+        <div class="onimg"> Minecraft Education Edition brings the classroom and curriculum to students in an environment they are already comfortable with. <br> It offers the same Minecraft experience many students enjoy already, but with some additional capabilities that enable them to collaborate in the classroom, as well as support for educators to deliver learning activities within the game. </div>
+      </div>
+      <div class="containerr">
+        <id="quartz">
+          <img src="https://user-images.githubusercontent.com/87051960/128582874-3a555a11-dfc8-49cb-9c8f-8adbde3b471c.png" alt="quartz background" height="auto" width="100%">
+          <div class="fun">
+            <h2 id="engage">ENGAGE STUDENTS IN FUN NEW WAYS</h2>
+            <h3>Educators have told us that using Minecraft to teach part of their curriculum has helped them with:</h3>
+            <ul>
+              <li>improved student engagement
+              <li>collaboration
+              <li>creative exploration
+              <li>tangible learning outcomes
+            </ul>
+          </div>
+          <div class="cow">
+            <img src="https://user-images.githubusercontent.com/87051960/127931376-401025ee-c76d-4da7-bee2-70fcabbe2f84.png" style:"height=6vw" alt="Minecraft cow">
+          </div>
+      </div>
+    </div>
+    <div class="footer"> Ariela Mcclame </div>
+  </body>
 </html>
