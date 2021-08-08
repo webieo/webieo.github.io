@@ -1,215 +1,227 @@
-!DOCTYPE html>
-<html>
-<head>   
+!DOCTYPE html> <html>
+  <head>
     <title> Minecraft Education </title>
-    <meta charset= "utf-8"> 
-  <style>
+    <meta charset="utf-8">
+    <style>
       .header {
-  padding: 1px;
-  text-align: center;
-  background:rgb(40, 122, 12);
-  color: black;
-  font-size:5px;
-          font-family:monaco;
-              position:fixed;
-              width:100%;
-              top:0px;
-              left:0px;
-              z-index:5;
-              border-bottom-style:solid;
-             border-color:rgb(84, 56, 19);
-             border-width:6px;
-           
+        padding: 1px;
+        text-align: center;
+        background: rgb(40, 122, 12);
+        color: black;
+        font-size: 5px;
+        font-family: monaco;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        border-bottom-style: solid;
+        border-color: rgb(84, 56, 19);
+        border-width: 6px;
       }
-      title {
-      margin:0px;
-      padding:0px;
-}
-      .body {
-          font-size: 20px;
-          font-family:courier;
-          padding:0px;
-          margin:0px;    
-      }
-     body {
-          font-size: 20px;
-          font-family:courier;
-          padding:0px;
-          margin:0px;
-          }
-          p {
-              padding:3px;
-              font-weight:lighter;
-              margin:0px;
-          
-          }
-      body {
-          height: 100%;
-          width: 100%;
-          margin:0px;
-          background-color:rgb(94,72,49);
-      }
-      .responsive {
-          width: 100%;
-          height: auto;
-          top: 20px;
-          left:0px;
-          right:0px;
-          margin:0px;
-          padding:0px;
-          z-index:1;
-      }
-        .responsiv {
-         height: auto;
-    top: -6vw;
-    left: 0px;
-    right: 0px;
-    margin: 0px;
-    padding: 0px;
-    position: absolute;
-            z-index:1;
-          }
-      .responsivee {
-    width: 49.5%;
-    height: auto;
-    top: -5vw;
-    left: 0px;
-    right: 0px;
-    margin: 0px;
-    padding: 0px;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
-          }
-      .topnav {
-          background-color: rgb(66, 161, 35);
-          overflow: hidden;
-          color: black;
-          z-index:5;
-          background-color: #36b030;
-          -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-          box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-      }
-      .topnav a {
-          float: left;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 10px 50px;
-          text-decoration: none;
-          font-size: 15px;
-          color:black;
-          font-family:serif;
-          font-weight: bold;
-          font-style: oblique;
-      }
-      .topnav a:hover {
-          background-color: rgb(8, 151, 50);
-          padding: 10px 50px;
-          color: white;
-           box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
-      }
-      .topnave a.active {
-          background-color: #04AA6D;
-          color: black;
-    }
-    h2 {
-    font-size: 2vw;
-    text-align: center;
-    font-family: didot;
-    font-weight: bold;
-    z-index: 1;
-    background-color: rgb(122,85,57, 0.2);
-    position: relative;
-    top: -6vw;
-    color: white;
-    box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
-    transition: 0.3s;
-    }
 
-}
-h3 {
-margin:30px;
-font-size:25px;
-}
-.title {
-position:relative;
-top:-185px;
-z-index:2;
-}
-.container {
-    position: relative;
-    text-align: center;
-    color: lightgrey;
-    height: 52vw;
-    top: 0vw;
-}
-.text {
-position: absolute;
-    top: 10vw;
-    left: 13vw;
-    width: 21vw;
-    height: auto;
-    background: rgb(121,60,251, 0.5);
-    font-weight: lighter;
-    z-index: 4;
-    padding: 1vw;
-    font-size: 1.4vw;
-}
-.cover {
-object-fit:cover;
-z-index:1;
-}
-.skele {
-position: absolute;
-    top: 36vw;
-    float: right;
-    right: -1vw;
-    margin: 0px;
-    display: block;
-    width: 25vw;
-    z-index: 4;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:transparent;
-  color: black;
-  text-align: center;
-    z-index:5;
+      title {
+        margin: 0px;
+        padding: 0px;
       }
-  </style>
+
+      .body {
+        font-size: 20px;
+        font-family: courier;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      body {
+        font-size: 20px;
+        font-family: courier;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      p {
+        padding: 3px;
+        font-weight: lighter;
+        margin: 0px;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+        margin: 0px;
+        background-color: rgb(94, 72, 49);
+      }
+
+      .responsive {
+        width: 100%;
+        height: auto;
+        top: 20px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+
+      .responsiv {
+        height: auto;
+        top: -6vw;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .responsivee {
+        width: 49.5%;
+        height: auto;
+        top: -5vw;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        object-fit: cover;
+        position: relative;
+        z-index: 1;
+      }
+
+      .topnav {
+        background-color: rgb(66, 161, 35);
+        overflow: hidden;
+        color: black;
+        z-index: 5;
+        background-color: #36b030;
+        -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+        box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 50px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        font-weight: bold;
+        font-style: oblique;
+      }
+
+      .topnav a:hover {
+        background-color: rgb(8, 151, 50);
+        padding: 10px 50px;
+        color: white;
+        box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
+      }
+
+      .topnave a.active {
+        background-color: #04AA6D;
+        color: black;
+      }
+
+      h2 {
+        font-size: 2vw;
+        text-align: center;
+        font-family: didot;
+        font-weight: bold;
+        z-index: 1;
+        background-color: rgb(122, 85, 57, 0.2);
+        position: relative;
+        top: -6vw;
+        color: white;
+        box-shadow: 0 4px 4px 0 rgb(0 0 0 / 20%);
+        transition: 0.3s;
+      }
+      }
+
+      h3 {
+        margin: 30px;
+        font-size: 25px;
+      }
+
+      .title {
+        position: relative;
+        top: -185px;
+        z-index: 2;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: lightgrey;
+        height: 52vw;
+        top: 0vw;
+      }
+
+      .text {
+        position: absolute;
+        top: 10vw;
+        left: 13vw;
+        width: 21vw;
+        height: auto;
+        background: rgb(121, 60, 251, 0.5);
+        font-weight: lighter;
+        z-index: 4;
+        padding: 1vw;
+        font-size: 1.4vw;
+      }
+
+      .cover {
+        object-fit: cover;
+        z-index: 1;
+      }
+
+      .skele {
+        position: absolute;
+        top: 36vw;
+        float: right;
+        right: -1vw;
+        margin: 0px;
+        display: block;
+        width: 25vw;
+        z-index: 4;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(94,72,49);
+        color: black;
+        text-align: center;
+        z-index: 5;
+      }
+    </style>
   </head>
-<body>
-    <div class="header">  
-    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
+  <body>
+    <div class="header">
+      <id="minecrafted">
+        <img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <a class="active" href="index.html">HOME</a>
-            <a href="demo_worlds.html">DEMO WORLDS</a>
-            <a href="programming.html">PROGRAMMING</a>
-    </div>
+          <a class="active" href="index.html">HOME</a>
+          <a href="demo_worlds.html">DEMO WORLDS</a>
+          <a href="programming.html">PROGRAMMING</a>
+        </div>
     </div>
     </div>
     <div class="body">
-<img class="cover" src="https://user-images.githubusercontent.com/87051960/128273207-9dadc682-70f5-45e0-bee3-95e11f46b1e0.png" alt="wood background" width=100%
-height=180px>
-    <p>
- <h2>PROGRAMMING IN MINECRAFT</h2>
- <div class="container">
-<img src="https://user-images.githubusercontent.com/87051960/128272153-d277cf6f-9ded-4c9b-8cfc-47b5aed7f4ca.jpg" class="responsiv" style="width:100%" alt="Minecraft computer with code">
-<div class="text">Using MinecraftEDU students can write real computer progams using the LUA language. Right click on a computer to edit your code, or even better, use a real code editor outside of Minecraft to edit your code.</div>
-</div>
-<img src="https://user-images.githubusercontent.com/87051960/128429396-5f7b772a-b962-4e80-b86c-0d4dfde8d9d3.png" alt="minecraft skeleton" class="skele">
- <br>
-<img src="https://user-images.githubusercontent.com/87051960/128272282-50f2acf5-41b7-488c-9263-a1431f1afa05.jpg" class="responsivee" alt="Minecraft computer with wooden background">
-<img src="https://user-images.githubusercontent.com/87051960/128272359-37ae4d5c-6875-4583-80cb-5b5967abadb1.jpg" class="responsivee" alt="Minecraft coding console">
-</p>
-</div>
-</div>
-<div class="footer">
-    Ariela Mcclame
-</div>
-</body>
-  
-</html>
+      <img class="cover" src="https://user-images.githubusercontent.com/87051960/128273207-9dadc682-70f5-45e0-bee3-95e11f46b1e0.png" alt="wood background" width=100% height=180px>
+      <p>
+      <h2>PROGRAMMING IN MINECRAFT</h2>
+      <div class="container">
+        <img src="https://user-images.githubusercontent.com/87051960/128272153-d277cf6f-9ded-4c9b-8cfc-47b5aed7f4ca.jpg" class="responsiv" style="width:100%" alt="Minecraft computer with code">
+        <div class="text">Using MinecraftEDU students can write real computer progams using the LUA language. Right click on a computer to edit your code, or even better, use a real code editor outside of Minecraft to edit your code.</div>
+      </div>
+      <img src="https://user-images.githubusercontent.com/87051960/128429396-5f7b772a-b962-4e80-b86c-0d4dfde8d9d3.png" alt="minecraft skeleton" class="skele">
+      <br>
+      <img src="https://user-images.githubusercontent.com/87051960/128272282-50f2acf5-41b7-488c-9263-a1431f1afa05.jpg" class="responsivee" alt="Minecraft computer with wooden background">
+      <img src="https://user-images.githubusercontent.com/87051960/128272359-37ae4d5c-6875-4583-80cb-5b5967abadb1.jpg" class="responsivee" alt="Minecraft coding console">
+      </p>
+    </div>
+    </div>
+    <div class="footer"> Ariela Mcclame </div>
+  </body>
