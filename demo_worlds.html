@@ -1,200 +1,213 @@
 <!DOCTYPE html>
 <html>
-<head>   
+  <head>
     <title> Minecraft Education </title>
-    <meta charset= "utf-8"> 
-  <style>
+    <meta charset="utf-8">
+    <style>
       .header {
-  padding: 1px;
-  text-align: center;
-  background:rgb(40, 122, 12);
-  color: black;
-  font-size:5px;
-          font-family:monaco;
-              position:fixed;
-              width:100%;
-              top:0px;
-              left:0px;
-              z-index:5;
-              border-bottom-style:solid;
-             border-color:rgb(84, 56, 19);
-             border-width:6px;    
-      }
-      .body {
-          font-size: 20px;
-          font-family:courier;
-          margin:0px;   
-      }
-          p {
-              padding:0px;
-              font-weight:lighter;
-          margin:3px;
-          }
-      body {
-          height: 60%;
-          width: 100%;
-          margin:0px;
-          background-color:rgb(146,215,254, 0.9);
-      }
-      .responsive {
-          width: 100%;
-          height: auto;
-          top: 5px;
-          left:0px;
-          right:0px;
-          margin:0px;
-          padding:0px;
-          z-index:1;
-      }
-       .responsiv {
-          width: 100%;
-          height: auto;
-          top:150px;
-          left:0px;
-          right:0px;
-          margin:0px;
-          padding:0px;
-          border-color:white;
-          border-radius:30px;
-          position:relative;
-          z-index:0;
-      }
-           .responsivee {
-          width: 49%;
-          height: auto;
-          top:140px;
-          left:0px;
-          right:0px;
-          margin:0px;
-          padding:0px;
-          border-color:white;
-          border-radius:20px;
-          position:relative;
-               z-index:1;
-          }
-      .topnav {
-          background-color: rgb(66, 161, 35);
-          overflow: hidden;
-          color: black;
-          z-index:5;
-          background-color: #36b030;
-          -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-          box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
-      }
-      .topnav a {
-          float: left;
-          color: #f2f2f2;
-          text-align: center;
-          padding: 10px 50px;
-          text-decoration: none;
-          font-size: 15px;
-          color:black;
-          font-family:serif;
-          font-weight: bold;
-          font-style: oblique;
-      }
-      .topnav a:hover {
-          background-color: rgb(8, 151, 50);
-          padding: 10px 50px;
-          color: white;
-           box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
-      }
-      .topnave a.active {
-          background-color: #04AA6D;
-          color: black;
-         
-    }
-    h2 {
-        font-size:30px;
+        padding: 1px;
         text-align: center;
-        font-family:didot;
-        font-weight:bold;
-        z-index:1;
-background-color:rgb(67, 188, 222, 0.5);
-margin:0px;
-    }
-
-}
-h3 {
-margin:30px;
-font-size:25px;
-}
-.title {
-position:relative;
-top:-75px;
-z-index:2;
-color:white;
-font-size:40px;
-box-shadow: 0 3px 4px 0 rgb(0 0 0 / 20%);
-transition: 0.3s;
-
-}
-#clouds {
-z-index:1;
-margin:0px;
-background-color:rgb(149,214,254);
-}
-.text {
-width:100%;
-margin:7px;
-text-align:center;
-position:relative;
-top:-35px;
-    color:white;
-    background:rgb(121,60,251, 0.4);
-    font-size:30px;
-    z-index:3;
-}
-.imgs {
-position:relative;
-top:-150px;
-margin:0px;
-}
-.spider {
-    position: absolute;
-    top:7em;
-    float: left;
-    left: -2em;
-    z-index:2;
-}
- .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color:transparent;
-  color: black;
-  text-align: center;
-     z-index:5;
+        background: rgb(40, 122, 12);
+        color: black;
+        font-size: 5px;
+        font-family: monaco;
+        position: fixed;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 5;
+        border-bottom-style: solid;
+        border-color: rgb(84, 56, 19);
+        border-width: 6px;
       }
-  </style>
+
+      .body {
+        font-size: 20px;
+        font-family: courier;
+        margin: 0px;
+      }
+
+      p {
+        padding: 0px;
+        font-weight: lighter;
+        margin: 3px;
+      }
+
+      body {
+        height: 60%;
+        width: 100%;
+        margin: 0px;
+        background-color: rgb(146, 215, 254, 0.9);
+      }
+
+      .responsive {
+        width: 100%;
+        height: auto;
+        top: 5px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        z-index: 1;
+      }
+
+      .responsiv {
+        width: 100%;
+        height: auto;
+        top: 150px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        border-color: white;
+        border-radius: 30px;
+        position: relative;
+        z-index: 0;
+      }
+
+      .responsivee {
+        width: 49%;
+        height: auto;
+        top: 140px;
+        left: 0px;
+        right: 0px;
+        margin: 0px;
+        padding: 0px;
+        border-color: white;
+        border-radius: 20px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .topnav {
+        background-color: rgb(66, 161, 35);
+        overflow: hidden;
+        color: black;
+        z-index: 5;
+        background-color: #36b030;
+        -webkit-box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+        box-shadow: 0 -4px rgb(21 108 0 / 50%) inset, 0 4px rgb(100 253 31 / 99%) inset, -4px 0 rgb(100 253 31 / 50%) inset, 4px 0 rgb(21 108 0 / 50%) inset;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 10px 50px;
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-family: serif;
+        font-weight: bold;
+        font-style: oblique;
+      }
+
+      .topnav a:hover {
+        background-color: rgb(8, 151, 50);
+        padding: 10px 50px;
+        color: white;
+        box-shadow: 0 -4px rgb(11 56 28 / 50%) inset, 0 4px rgb(76 158 104 / 50%) inset, -4px 0 rgb(76 158 104 / 50%) inset, 4px 0 rgb(11 65 33 / 50%) inset;
+      }
+
+      .topnave a.active {
+        background-color: #04AA6D;
+        color: black;
+      }
+
+      h2 {
+        font-size: 30px;
+        text-align: center;
+        font-family: didot;
+        font-weight: bold;
+        z-index: 1;
+        background-color: rgb(67, 188, 222, 0.5);
+        margin: 0px;
+      }
+      }
+
+      h3 {
+        margin: 30px;
+        font-size: 25px;
+      }
+
+      .title {
+        position: relative;
+        top: -75px;
+        z-index: 2;
+        color: white;
+        font-size: 40px;
+        box-shadow: 0 3px 4px 0 rgb(0 0 0 / 20%);
+        transition: 0.3s;
+      }
+
+      #clouds {
+        z-index: 1;
+        margin: 0px;
+        background-color: rgb(149, 214, 254);
+      }
+
+      .text {
+        width: 100%;
+        margin: 7px;
+        text-align: center;
+        position: relative;
+        top: -35px;
+        color: white;
+        background: rgb(121, 60, 251, 0.4);
+        font-size: 30px;
+        z-index: 3;
+      }
+
+      .imgs {
+        position: relative;
+        top: -150px;
+        margin: 0px;
+      }
+
+      .spider {
+        position: absolute;
+        top: 7em;
+        float: left;
+        left: -2em;
+        z-index: 2;
+      }
+
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color:rgb(155,218,253);
+        color: black;
+        text-align: center;
+        z-index: 5;
+      }
+    </style>
   </head>
-<body>
-    <div class="header">  
-    <id="minecrafted"><img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
+  <body>
+    <div class="header">
+      <id="minecrafted">
+        <img src="https://user-images.githubusercontent.com/87051960/127571926-9092f80b-1abb-4279-bd01-7d21770b33ae.png" alt="Minecraft Education Edition" height="70px">
         <div class="topnav">
-            <a class="active" href="index.html">HOME</a>
-            <a href="demo_worlds.html">DEMO WORLDS</a>
-            <a href="programming.html">PROGRAMMING</a>
-    </div>
+          <a class="active" href="index.html">HOME</a>
+          <a href="demo_worlds.html">DEMO WORLDS</a>
+          <a href="programming.html">PROGRAMMING</a>
+        </div>
     </div>
     </div>
     <div class="body">
-<id="clouds"><img src="https://timelinecovers.pro/facebook-cover/download/minecraft_sky_clouds-facebook-cover.jpg" alt="minecraft clouds" width="100%" height="200px">
-    <p>
- <h2 class="title">DEMO WORLDS</h2>
- <div class="text">
-Here are some worlds made by teachers.
-</div>
-</p>
-</body>
-<div class="imgs">
-<img src="https://user-images.githubusercontent.com/87051960/128270547-7cc23369-9aca-4621-b063-c7be0d90bfec.jpg" alt="Demo world 2" class="responsivee">
-<img src="https://user-images.githubusercontent.com/87051960/128270574-05b06f3b-1427-40a2-bf84-e3307d667731.jpg" alt="Demo world 3" class="responsivee">
-<img src="https://user-images.githubusercontent.com/87051960/128270480-faf13c9c-3d7f-43fc-8413-1b7cfe0402f0.jpg" alt="Demo world 1" class="responsiv">
-    </div>
-<img src="https://user-images.githubusercontent.com/87051960/128429420-1e9c9ef7-9e59-4d66-a13b-d6870febdba3.png" alt="Minecraft spider" class="spider">
-<div class="footer"
-     Ariela Mcclame
-     </div>
-    </html>
+      <id="clouds">
+        <img src="https://timelinecovers.pro/facebook-cover/download/minecraft_sky_clouds-facebook-cover.jpg" alt="minecraft clouds" width="100%" height="200px">
+        <p>
+        <h2 class="title">DEMO WORLDS</h2>
+        <div class="text"> Here are some worlds made by teachers. </div>
+        </p>
+  </body>
+  <div class="imgs">
+    <img src="https://user-images.githubusercontent.com/87051960/128270547-7cc23369-9aca-4621-b063-c7be0d90bfec.jpg" alt="Demo world 2" class="responsivee">
+    <img src="https://user-images.githubusercontent.com/87051960/128270574-05b06f3b-1427-40a2-bf84-e3307d667731.jpg" alt="Demo world 3" class="responsivee">
+    <img src="https://user-images.githubusercontent.com/87051960/128270480-faf13c9c-3d7f-43fc-8413-1b7cfe0402f0.jpg" alt="Demo world 1" class="responsiv">
+  </div>
+  <img src="https://user-images.githubusercontent.com/87051960/128429420-1e9c9ef7-9e59-4d66-a13b-d6870febdba3.png" alt="Minecraft spider" class="spider">
+  <div class="footer" Ariela Mcclame </div>
+</html>
